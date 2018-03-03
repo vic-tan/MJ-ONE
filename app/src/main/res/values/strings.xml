@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">幸运28</string>
+    <string name="navigator_title_one">趋势</string>
+    <string name="navigator_two">资讯</string>
+    <string name="navigator_three">历史</string>
+    <string name="navigator_four">设置</string>
+</resources>

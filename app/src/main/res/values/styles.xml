@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Guillotine" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorPrimaryDark">#00C15C</item>
+        <item name="android:colorPrimary">#00C15C</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <!-- ———————————————————————— button 样式 ———————————————————————————————————————————— -->
+    <!--  公用的button 矩形 -->
+    <style name="base_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120px</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">40px</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+
+
+    <!-- 底部tabs merge公用样式 -->
+    <style name="common_fragmentnavigator_merge_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">130px</item>
+        <item name="android:elevation">18px</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 底部tabs 布局公用样式 -->
+    <style name="common_fragmentnavigator_layout_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 底部tabs 图片公用样式 -->
+    <style name="common_fragmentnavigator_image_style2">
+        <item name="android:layout_width">72px</item>
+        <item name="android:layout_height">72px</item>
+    </style>
+
+    <!-- 底部tabs 字体公用样式 -->
+    <style name="common_fragmentnavigator_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">17px</item>
+        <item name="android:textColor">@color/common_fragmentnavigator_color_tab_text</item>
+        <item name="android:textSize">32px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="dialogMessageStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="dialogBackgroundStyle">
+        <item name="com.tlfmj.mjone:rv_backgroundColor">#E0E1E2</item>
+        <item name="com.tlfmj.mjone:rv_cornerRadius">10px</item>
+    </style>
+
+    <style name="dialogOKbtnStyle">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#31b36d</item>
+        <item name="com.tlfmj.mjone:rv_backgroundColor">#E0E1E2</item>
+        <item name="com.tlfmj.mjone:rv_backgroundPressColor">#E0E1E2</item>
+    </style>
+
+
+    <style name="dialogCancelbtnStyle">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#000000</item>
+        <item name="com.tlfmj.mjone:rv_backgroundColor">#E0E1E2</item>
+        <item name="com.tlfmj.mjone:rv_backgroundPressColor">#E0E1E2</item>
+
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00C15C</item>
+    </style>
+</resources>
