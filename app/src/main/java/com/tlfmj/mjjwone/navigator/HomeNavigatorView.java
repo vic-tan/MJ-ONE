@@ -1,9 +1,9 @@
-package com.tlfmj.mjone.navigator;
+package com.tlfmj.mjjwone.navigator;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.tlfmj.mjone.R;
+import com.tlfmj.mjjwone.R;
 
 
 /**

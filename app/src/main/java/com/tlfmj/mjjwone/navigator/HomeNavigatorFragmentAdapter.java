@@ -1,4 +1,4 @@
-package com.tlfmj.mjone.navigator;
+package com.tlfmj.mjjwone.navigator;
 
 import android.support.v4.app.Fragment;
 

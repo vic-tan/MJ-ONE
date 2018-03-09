@@ -1,13 +1,13 @@
-package com.tlfmj.mjone;
+package com.tlfmj.mjjwone;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.tlfmj.mjone.navigator.FragmentNavigator;
-import com.tlfmj.mjone.navigator.HomeNavigatorFragmentAdapter;
-import com.tlfmj.mjone.navigator.HomeNavigatorView;
+import com.tlfmj.mjjwone.navigator.FragmentNavigator;
+import com.tlfmj.mjjwone.navigator.HomeNavigatorFragmentAdapter;
+import com.tlfmj.mjjwone.navigator.HomeNavigatorView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

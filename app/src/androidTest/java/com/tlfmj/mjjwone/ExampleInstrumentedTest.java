@@ -1,4 +1,4 @@
-package com.tlfmj.mjone;
+package com.tlfmj.mjjwone;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

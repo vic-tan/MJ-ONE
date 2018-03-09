@@ -1,4 +1,4 @@
-package com.tlfmj.mjone;
+package com.tlfmj.mjjwone;
 
 import org.junit.Test;
 
