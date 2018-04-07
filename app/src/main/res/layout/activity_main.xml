@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.tlf.basic.base.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                   xmlns:abv="http://schemas.android.com/apk/res-auto"
                                                   android:layout_width="match_parent"
                                                   android:layout_height="match_parent"
@@ -18,7 +18,7 @@
             android:layout_gravity="center"
             android:textSize="@dimen/guillotine_item_text_size"/>
     </android.support.v7.widget.Toolbar>
-    <com.tlf.basic.base.autolayout.AutoLinearLayout
+    <LinearLayout
         android:id="@+id/bottomNavigatorView_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,16 +30,16 @@
             android:layout_height="2px"
             android:background="@color/theme_line_list_color"/>
 
-        <com.tlfmj.mjjwone.navigator.HomeNavigatorView
+        <com.tlfmj.mj01.navigator.HomeNavigatorView
             android:id="@+id/bottomNavigatorView"
             android:layout_width="match_parent"
             android:layout_height="160px"
             android:background="#f8f8f8"
             android:clipToPadding="false"/>
 
-    </com.tlf.basic.base.autolayout.AutoLinearLayout>
+    </LinearLayout>
 
-    <com.tlf.basic.base.autolayout.AutoFrameLayout
+    <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -49,4 +49,4 @@
 
     <!--<include layout="@layout/common_actionbar_title_view"/>-->
 
-</com.tlf.basic.base.autolayout.AutoRelativeLayout>
+</RelativeLayout>

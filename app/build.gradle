@@ -3,27 +3,23 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     defaultConfig {
-        applicationId "com.tlfmj.mjjwone"
         minSdkVersion 19
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
+            ldLibs "log", "z", "m"
             //选择要添加的对应cpu类型的.so库。
-            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86', 'x86_64', 'mips', 'mips64'
+            abiFilters 'armeabi','x86'
             // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
         }
-        manifestPlaceholders = [
-                JPUSH_PKGNAME : applicationId,
-                JPUSH_APPKEY : "eca59336063db0709e6df480", //JPush上注册的包名对应的appkey.
-                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
-        ]
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
         }
     }
 }
@@ -35,11 +31,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation 'com.github.vic-tan:mj-com-utils:1.1.9'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    implementation 'cn.jiguang.sdk:jpush:3.1.1'
+    implementation 'com.github.vic-tan:mj-com-utils:1.1.9'
+    //    implementation 'cn.jiguang.sdk:jpush:3.1.1'
     // 此处以JPush 3.1.1 版本为例。
-    implementation 'cn.jiguang.sdk:jcore:1.1.9'
-
+    //    implementation 'cn.jiguang.sdk:jcore:1.1.9'
+    implementation files('libs/android-async-http-1.4.8.jar')
+    implementation files('libs/android-mastersdk-1.16.jar')
+    implementation files('libs/bugly_agent.jar')
+    implementation files('libs/bugly_crash_release.jar')
+    implementation files('libs/jpush-android-2.1.8.jar')
+    implementation files('libs/zxing.jar')
 }
